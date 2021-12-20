@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi độ F sang độ C</title>
+</head>
+<body>
+<p>Fahrenheit</p>
+<input id="inp" type="text">
+<button onclick="doiNhietDo()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+    function doiNhietDo(){
+        let F = document.getElementById("inp").value;
+        let C = (F-32)/1.8;
+        document.getElementById("result").innerHTML = "Celcius: " + C;
+    }
+</script>
+</body>
+</html>
